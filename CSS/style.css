@@ -21,7 +21,7 @@ h1, h2  {
     text-align: right;
 }
 
-.colizquierda, .colderecha, .footer {
+.colizquierda, .colderecha {
   border: 1px solid white;
   border-radius: 2%;
   background: #7b489c;  /* fallback for old browsers */
