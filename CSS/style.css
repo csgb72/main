@@ -13,6 +13,10 @@ html {
     max-width: 90%;
 }
 /*agregar fuentes y familias de fuentes*/
+.nombre_barra {
+  display: inline;
+}
+
 h1, h2  {
     text-align: right;
 }
