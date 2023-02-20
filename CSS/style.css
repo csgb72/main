@@ -21,7 +21,7 @@ h1, h2  {
     text-align: right;
 }
 
-.colizquierda, .colderecha {
+.colizquierda, .colderecha, .footer {
   border: 1px solid white;
   border-radius: 2%;
   background: #7b489c;  /* fallback for old browsers */
@@ -70,4 +70,6 @@ h1, h2  {
     margin: 5px;
     align-items: center;
   }
- 
+ .footer  {
+  border-top: 1px dotted gray;
+ }
