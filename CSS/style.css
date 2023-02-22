@@ -17,10 +17,36 @@ html {
 .container  {
     max-width: 90%;
 }
+/*Barra de navegación*/
+.navbar  {
+  padding: 2rem;
+  background-color: #b8e2f5;
+}
+
+.navbar-collapse  {
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+}
 
 .nombre_barra {
   display: inline;
+  vertical-align: middle;
+  margin: 0 20px 0 20px ;
 }
+
+.nav-item  {
+  margin: 0 10px 0 10px
+}
+
+
+/*Poner hover a links de la barra*/
+.nav-item:hover  {
+  color: lightgreen;
+  opacity: 0,7;
+}
+
+/*Cuerpo del documento*/
 body  {
   text-align: justify;
   font-size: 20px;
@@ -37,15 +63,12 @@ h3  {
 /*.colizquierda, .colderecha {
   border: 1px solid white;
   border-radius: 2%;
-  background: #7b489c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #7b489c;  /* fallback for old browsers *//*
+  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 *//*
   background: linear-gradient(to right, #49a09d, #b97edf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
 }*/
 .card  {
   box-sizing:border-box;
-  max-width: 90%;
-  margin: auto;
-  align-items: stretch;
   background-color: #9da8ad;
   margin-bottom: 16px;
 }
@@ -56,7 +79,7 @@ h3  {
 
 .card-text  {
   text-align: right;
-  color: white;
+  color: rgb(104, 97, 97);
   font: bold;
   font-size: larger;
 }
@@ -104,7 +127,7 @@ h3  {
   padding-right: 20px;
 }
 .bi-instagram:hover  {
-  color: rgb(244, 106, 140);
+  color: rgb(248, 138, 166);
   opacity: 0,7;
 }
 
@@ -136,6 +159,10 @@ h3  {
   margin-bottom: 20px;
 }
 
+.a {
+  break-after: auto;
+}
+
 .row_referencias  {
   border-bottom: solid 3px #9da8ad;
 }
@@ -145,7 +172,6 @@ h3  {
 
 .row_pasatiempos  {
   padding-top: 10px;
-  border-bottom: solid 3px #9da8ad;
 }
 
 .parrafo_pasatiempos  {
@@ -155,6 +181,14 @@ h3  {
 
 
 
+
  .footer  {
-  border-top: 1px dotted gray;
+  border-top: solid 3px #9da8ad;
  }
+ 
+ /*Responsive*/
+@media screen and (max-width: 767px){
+  .navbar-brand  {
+    display: none;
+  }
+}
