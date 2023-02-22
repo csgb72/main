@@ -36,7 +36,7 @@ html {
 }
 
 .nav-item  {
-  margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
 }
 
 
@@ -55,9 +55,11 @@ body  {
 h1, h2  {
     font: georgia;
     text-align: right;
+    font-weight: bolder;
 }
 h3  {
   font: verdana;
+  font-weight: bolder;
 }
 
 /*.colizquierda, .colderecha {
@@ -180,12 +182,25 @@ h3  {
 }
 
 
+/*Columna derecha*/
+.perfil_personal  {
+  margin: 20px 0 20px 20px;
+  border-bottom: solid 3px #9da8ad;
+}
+
+.p_personal, .p_formacion  {
+  text-indent: 50px;
+}
+.info_personal, .formacion  {
+  margin: 40px 0 20px 20px;
+  border-bottom: solid 3px #9da8ad;
+}
 
 
  .footer  {
   border-top: solid 3px #9da8ad;
  }
- 
+
  /*Responsive*/
 @media screen and (max-width: 767px){
   .navbar-brand  {
