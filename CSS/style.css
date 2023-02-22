@@ -3,73 +3,158 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+/*Fuentes*/
+*  {
+   font-family: Georgia, 'Times New Roman', Times, serif, Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .container  {
     max-width: 90%;
 }
-/*agregar fuentes y familias de fuentes*/
+
 .nombre_barra {
   display: inline;
 }
-
-h1, h2  {
-    text-align: right;
+body  {
+  text-align: justify;
+  font-size: 20px;
 }
 
-.colizquierda, .colderecha {
+h1, h2  {
+    font: georgia;
+    text-align: right;
+}
+h3  {
+  font: verdana;
+}
+
+/*.colizquierda, .colderecha {
   border: 1px solid white;
   border-radius: 2%;
   background: #7b489c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #49a09d, #b97edf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
+  background: linear-gradient(to right, #49a09d, #b97edf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+}*/
 .card  {
   box-sizing:border-box;
-  max-width: fit-content;
-
-}
-.imagen {
   max-width: 90%;
   margin: auto;
+  align-items: stretch;
+  background-color: #9da8ad;
+  margin-bottom: 16px;
+}
+#imagen {
+  padding: 2px;
+  margin: 4px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-    background: #188a03;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
-  }
-  
-  .fa-facebook {
-    background: #20acf8;
-    color: white;
-  }
-  .fa-instagram {
-    background: #ed0404;
-    color: white;
-  }
-  .fa {
-    padding: 2px;
-    font-size: 1vw;
-    width: 55px;
-    text-decoration: none;
-    margin: 5px;
-    align-items: center;
-  }
+.card-text  {
+  text-align: right;
+  color: white;
+  font: bold;
+  font-size: larger;
+}
+
+.lista_contactos  {
+  list-style: none;
+  text-align: right;
+}
+
+.row_contacto  {
+  border-top: solid 3px #9da8ad;
+  padding-top: 10px;
+}
+
+.row_redes_sociales  {
+  border-bottom: solid 3px #9da8ad;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+
+.iconos  {
+  font-size: 50px;
+  text-align: center;
+}
+
+.bi-whatsapp  {
+  color: #188a03;
+  padding-right: 20px;
+}
+.bi-whatsapp:hover  {
+  color: lightgreen;
+  opacity: 0,7;
+}
+.bi-facebook  {
+  color:  #1b32b8;
+  padding-right: 20px;
+}
+.bi-facebook:hover  {
+  color: lightblue;
+  opacity: 0,7;
+}
+
+.bi-instagram  {
+  color:  #e6155f;
+  padding-right: 20px;
+}
+.bi-instagram:hover  {
+  color: rgb(244, 106, 140);
+  opacity: 0,7;
+}
+
+.bi-linkedin  {
+  color:  #3882c8;
+  padding-right: 20px;
+}
+.bi-linkedin:hover  {
+  color: rgb(155, 187, 237);
+  opacity: 0,7;
+}
+
+.bi-pinterest  {
+  color:  #ff0f0f;
+}
+.bi-pinterest:hover  {
+  color: rgb(245, 150, 150);
+  opacity: 0,7;
+}
+
+.bi-globe-americas  {
+  color: #188a03;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.link_pagina  {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row_referencias  {
+  border-bottom: solid 3px #9da8ad;
+}
+.parrafo_referencias  {
+  margin: 10px 0 30px 50px ;
+}
+
+.row_pasatiempos  {
+  padding-top: 10px;
+  border-bottom: solid 3px #9da8ad;
+}
+
+.parrafo_pasatiempos  {
+  text-indent: 45px;
+  margin-bottom: 20px;  
+}
+
+
+
  .footer  {
   border-top: 1px dotted gray;
  }
