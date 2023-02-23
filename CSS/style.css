@@ -203,17 +203,33 @@ h4  {
 .badge  {
   justify-content: space-between;
 }
+/*Carrousel
+.carousel-item  {
+  width: 50%;
+  height: 50%;
+}
+*/
 
-
- .footer  {
+.carousel-inner div {
+  max-width: 1200px;
+  max-height: 500px;
+}
+.footer  {
   color: white;
   background-color: #12222a;
   margin-top: 10px;
  }
 
+
+
  /*Responsive*/
 @media screen and (max-width: 767px){
   .navbar-brand  {
     display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  .carousel-inner  {
+    display:flex;
   }
 }
