@@ -19,8 +19,8 @@ html {
 }
 /*Barra de navegación*/
 .navbar  {
-  padding: 2rem;
-  background-color: #b8e2f5;
+  padding-left: 20px;
+  background-color: #7493a2;
 }
 
 .navbar-collapse  {
@@ -39,13 +39,6 @@ html {
   margin: 0 10px 0 10px;
 }
 
-
-/*Poner hover a links de la barra*/
-.nav-item:hover  {
-  color: lightgreen;
-  opacity: 0,7;
-}
-
 /*Cuerpo del documento*/
 body  {
   text-align: justify;
@@ -60,6 +53,9 @@ h1, h2  {
 h3  {
   font: verdana;
   font-weight: bolder;
+}
+h4  {
+  text-align: center;
 }
 
 /*.colizquierda, .colderecha {
@@ -188,17 +184,31 @@ h3  {
   border-bottom: solid 3px #9da8ad;
 }
 
-.p_personal, .p_formacion  {
+.p_personal, .p_formacion, .p_experiencia, .p_proyectos  {
   text-indent: 50px;
 }
-.info_personal, .formacion  {
+.info_personal, .formacion, .experiencia, .proyectos  {
   margin: 40px 0 20px 20px;
   border-bottom: solid 3px #9da8ad;
 }
 
+.iconos_experiencia  {
+  font-size: 50px;
+  color: #c9d8df;
+  background-color: #12222a;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.badge  {
+  justify-content: space-between;
+}
+
 
  .footer  {
-  border-top: solid 3px #9da8ad;
+  color: white;
+  background-color: #12222a;
+  margin-top: 10px;
  }
 
  /*Responsive*/
