@@ -1,14 +1,3 @@
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
 /*Fuentes*/
 *  {
    font-family: Georgia, 'Times New Roman', Times, serif, Verdana, Geneva, Tahoma, sans-serif;
@@ -21,6 +10,7 @@ html {
 .navbar  {
   padding-left: 20px;
   background-color: #7493a2;
+  margin-bottom: 35px;
 }
 
 .navbar-collapse  {
@@ -39,16 +29,27 @@ html {
   margin: 0 10px 0 10px;
 }
 
+/*Seccion principal*/
+.principal  {
+  margin-top: 20px;
+}
+
+
 /*Cuerpo del documento*/
 body  {
   text-align: justify;
   font-size: 20px;
+  background-color: rgb(244, 241, 236);
 }
 
 h1, h2  {
     font: georgia;
     text-align: right;
     font-weight: bolder;
+}
+
+.subtitulo  {
+  margin-bottom: 25px;
 }
 h3  {
   font: verdana;
@@ -58,17 +59,16 @@ h4  {
   text-align: center;
 }
 
-/*.colizquierda, .colderecha {
-  border: 1px solid white;
-  border-radius: 2%;
-  background: #7b489c;  /* fallback for old browsers *//*
-  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 *//*
-  background: linear-gradient(to right, #49a09d, #b97edf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-}*/
+.colizquierda {
+  border-radius: 1%;
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #788da2, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #b2d2f1, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .card  {
   box-sizing:border-box;
   background-color: #9da8ad;
-  margin-bottom: 16px;
+  margin: 15px ;
 }
 #imagen {
   padding: 2px;
@@ -77,9 +77,9 @@ h4  {
 
 .card-text  {
   text-align: right;
-  color: rgb(104, 97, 97);
-  font: bold;
-  font-size: larger;
+  color: rgb(255, 255, 255);
+  font: bolder;
+  font-size: 1.5rem;
 }
 
 .lista_contactos  {
@@ -99,7 +99,7 @@ h4  {
 }
 
 .iconos  {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -138,27 +138,16 @@ h4  {
   opacity: 0,7;
 }
 
-.bi-pinterest  {
-  color:  #ff0f0f;
-}
-.bi-pinterest:hover  {
-  color: rgb(245, 150, 150);
-  opacity: 0,7;
-}
-
 .bi-globe-americas  {
   color: #188a03;
-  font-size: 20px;
+  font-size: 40px;
   padding-right: 10px;
 }
 
 .link_pagina  {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.a {
-  break-after: auto;
+  font-size: 30px;
+  text-align:justify;
+  margin: 20px;
 }
 
 .row_referencias  {
@@ -169,7 +158,21 @@ h4  {
 }
 
 .row_pasatiempos  {
-  padding-top: 10px;
+  padding: 20px;
+}
+
+.iconos_pasatiempos  {
+  border: 1px solid rgb(156, 151, 151);
+  border-style: double;
+  border-radius: 5%;
+  font-size: 40px;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: #fbfcfb;  
+}
+
+.fas  {
+  margin: 20px;
 }
 
 .parrafo_pasatiempos  {
@@ -200,8 +203,12 @@ h4  {
   margin: 20px;
 }
 
-.badge  {
-  justify-content: space-between;
+.spancol  {
+  text-align: center;
+}
+
+.colex1, .colex2, .colex3  {
+  margin-bottom: 30px;
 }
 /*Carrousel
 .carousel-item  {
@@ -231,5 +238,14 @@ h4  {
 @media screen and (max-width: 767px){
   .carousel-inner  {
     display:flex;
+  }
+}
+@media screen and (max-width: 767px){
+  .colderecha  {
+    border-radius: 1%;
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #6c90a7, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #98c7e3, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
 }
