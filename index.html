@@ -26,23 +26,26 @@
         <!-- Barra de navegación-->
 				<nav class="navbar sticky-top navbar-expand-md navbar-light">
 					<div class="container-fluid">
-						<a class="navbar-brand" href="#" title="Al inicio"><img src="imagenes/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"><h1 class="nombre_barra">Ian Murray</h1></a>
+						<a class="navbar-brand" href="#" rel="noopener noreferred" title="Al inicio"><img src="imagenes/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"><h1 class="nombre_barra">Ian Murray</h1></a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarToggler">
 							<ul class="navbar-nav d-flex justify-content-center aling-items-center">
                                 <li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#formacion">Formación</a>
+									<a class="nav-link active" aria-current="page" href="#formacion" rel="noopener noreferred">Formación</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#Proyectos">Proyectos</a>
+									<a class="nav-link active" aria-current="page" href="#Proyectos" rel="noopener noreferred">Proyectos</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" href="#pasatiempos"  >Pasatiempos</a> 
+									<a class="nav-link active" href="#pasatiempos" rel="noopener noreferred">Pasatiempos</a> 
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" href="#skills">Skills</a>
+									<a class="nav-link active" href="#skills" rel="noopener noreferred">Skills</a>
+								</li>
+                <li class="nav-item">
+									<a class="nav-link active" href="#contacto" rel="noopener noreferred">Contacto</a>
 								</li>
 							</ul>
 							</div>
@@ -78,7 +81,7 @@
                             </div>
                             <p class="link_pagina">
                               <i class="bi bi-globe-americas"></i>
-                              <a href="http://csgb72.github.io/main/" title="Más información siguindo el link.">Web site</a>
+                              <a href="http://csgb72.github.io/main/" rel="noopener noreferred" title="Más información siguindo el link.">Web site</a>
                               </p>
                         </div>
                         <div class="row_referencias">
@@ -102,13 +105,83 @@
                               <i class='fas fa-book-open'></i>
                               <i class='fas fa-binoculars'></i>
                             </div>
+                        <div id="contacto" class="row formulario">
+                          <h3 class="titulo_formulario">Formulario de contacto</h3>
+                          <form class="row g-3 form">
+                            <div class="col-md-12">
+                              <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Nombre y apellido:</label>
+                                <input type="text" class="form-control" id="inputnombre2" placeholder="Su nombre y apellido aquí" required>
+                              </div>
+                              <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Empresa:</label>
+                                <input type="text" class="form-control" id="inputempresa" placeholder="Su Empresa aquí">
+                              </div>
+                              <label for="inputEmail4" class="form-label">Email:</label>
+                              <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Teléfono</label>
+                              <input type="number" form-control" id="inputtelefono"  placeholder="--- ---- ----" required>
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Dirección</label>
+                              <input type="text" class="form-control" id="inputdireccion" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Ciudad</label>
+                              <input type="text" class="form-control" id="inputciudad">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">Provincia</label>
+                              <select id="inputprovincia" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Buenos Aires</option>
+                                <option>Catamarca</option>
+                                <option>Chaco</option>
+                                <option>Chubut</option>
+                                <option>Córdoba</option>
+                                <option>Corrientes</option>
+                                <option>Entre Ríos</option>
+                                <option>Formosa</option>
+                                <option>Jujuy</option>
+                                <option>La Pampa</option>
+                                <option>La Rioja</option>
+                                <option>Mendoza</option>
+                                <option>Misiones</option>
+                                <option>Neuquén</option>
+                                <option>Río Negro</option>
+                                <option>Salta</option>
+                                <option>San Juan</option>
+                                <option>San Luis</option>
+                                <option>Santa Cruz</option>
+                                <option>Santa Fe</option>
+                                <option>Santiago del Estero</option>
+                                <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                                <option>Tucumán</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">CP</label>
+                              <input type="number" class="form-control" id="inputcp">
+                            </div>            
+                            <div class="col-12">
+                              <label for="Textarea1" class="form-label">Consulta:</label>
+                              <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                            </div>               
+                            <div class="col-12">
+                              <button type="reset" class="btn btn-primary boton_reset">Borrar</button>
+                              <button type="submit" class="btn btn-primary boton_enviar">Enviar</button>
+                            </div>
+                          </form>
+                        </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 colderecha">
                         <h3 class="perfil_personal">Perfil personal y laboral:</h3>
                         <div class="info_personal">
                             <h3>Información personal</h3>
-                            <p class="p_personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. <br> Semper feugiat nibh sed pulvinar proin.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. Semper feugiat nibh sed pulvinar proin. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. Semper feugiat nibh sed pulvinar proin.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. Semper feugiat nibh sed pulvinar proin. Semper feugiat nibh sed pulvinar proin.
+                            <p class="p_personal"> Ian Murray Diseño Web, Front End. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. <br> Semper feugiat nibh sed pulvinar proin.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. Semper feugiat nibh sed pulvinar proin. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. Semper feugiat nibh sed pulvinar proin.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod      tristique senectus et netus et malesuada fames. Semper feugiat nibh sed pulvinar proin. Semper feugiat nibh sed pulvinar proin.
                             </p>
                         </div>
                         <div class="formacion">
@@ -215,54 +288,65 @@
             </div>
           <footer class="container-fluid">
             <div id="skills" class="container habilidades">
-              <div class="container rangos text-center d-flex justify-content-evenly">
-                
+              <div class="container rangos text-center d-flex justify-content-evenly">                
             <div class="profess-cover row no-margin">
-              <div class="col-md-6">
-                  <div class=" prog-row row">
-                      <div class="col-sm-6">
-                        <i class='fab fa-java'></i>
-                      </div>
-                      <div class="col-sm-6">
-                          <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="row prog-row">
-                      <div class="col-sm-6">
-                        <i class='fab fa-php'></i>
-                      </div>
-                      <div class="col-sm-6">
-                          <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                <div class="col-md-6">
+                    <div class=" prog-row row">
+                        <div class="col-sm-6">
+                          <i class='fab fa-java'></i>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row prog-row">
+                        <div class="col-sm-6">
+                          <i class='fab fa-php'></i>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="col-md-6">
+                <div class="col-md-6">
+                    <div class="row prog-row">
+                        <div class="col-sm-6">
+                          <i class='fab fa-python'></i>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row prog-row">
+                        <div class="col-sm-6">
+                          <i class="material-icons">WD</i>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 63%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
                   <div class="row prog-row">
                       <div class="col-sm-6">
-                        <i class='fab fa-python'></i>
+                        <i class='fab fa-html5'></i>
                       </div>
                       <div class="col-sm-6">
                           <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="row prog-row">
-                      <div class="col-sm-6">
-                        <i class="material-icons">WD</i>
-                      </div>
-                      <div class="col-sm-6">
-                          <div class="progress">
-                              <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              <div class="progress-bar" role="progressbar" style="width:75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                       </div>
                   </div>
@@ -270,27 +354,16 @@
               <div class="col-md-6">
                 <div class="row prog-row">
                     <div class="col-sm-6">
-                      <i class='fab fa-html5'></i>
+                      <i class="fa fa-css3"></i>
                     </div>
                     <div class="col-sm-6">
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" style="width: 71%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>            
             </div>
-            <div class="col-md-6">
-              <div class="row prog-row">
-                  <div class="col-sm-6">
-                    <i class="fa fa-css3"></i>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
         </div>
 
           </footer> 
