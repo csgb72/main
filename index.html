@@ -27,26 +27,26 @@
         <!-- Barra de navegación-->
 				<nav class="navbar sticky-top navbar-expand-md navbar-light">
 					<div class="container-fluid">
-						<a class="navbar-brand" href="#" rel="noopener noreferred" title="Al inicio"><img src="imagenes/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"><h1 class="nombre_barra">Ian Murray</h1></a>
+						<a class="navbar-brand" href="#" title="Al inicio"><img src="imagenes/icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"><h1 class="nombre_barra">Ian Murray</h1></a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarToggler">
 							<ul class="navbar-nav d-flex justify-content-center aling-items-center">
                                 <li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#formacion" rel="noopener noreferred">Formación</a>
+									<a class="nav-link active" aria-current="page" href="#formacion">Formación</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#Proyectos" rel="noopener noreferred">Proyectos</a>
+									<a class="nav-link active" aria-current="page" href="#Proyectos">Proyectos</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" href="#pasatiempos" rel="noopener noreferred">Pasatiempos</a> 
+									<a class="nav-link active" href="#pasatiempos">Pasatiempos</a> 
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" href="#desempeno" rel="noopener noreferred">Desempeño</a>
+									<a class="nav-link active" href="#desempeno">Desempeño</a>
 								</li>
                 <li class="nav-item">
-									<a class="nav-link active" href="#contacto" rel="noopener noreferred">Contacto</a>
+									<a class="nav-link active" href="#contacto">Contacto</a>
 								</li>
 							</ul>
 							</div>
@@ -75,15 +75,17 @@
                         <div class="row_redes_sociales"><h3>Redes</h3>
                             <div class="iconos">
                                 <!-- Add bootstrap icons -->
-                                <i class="bi bi-whatsapp"></i>
-                                <i class="bi bi-facebook"></i>
-                                <i class="bi bi-instagram"></i>
-                                <i class="bi bi-linkedin"></i>
+                                <a href="https://api.whatsapp.com/" target="_blank" rel="nofollow"><i class="bi bi-whatsapp"></i></a>
+                                <a href="https://es-es.facebook.com/pages/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a> 
+                                <a href="https://instagram.com/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <p class="link_pagina">
-                              <i class="bi bi-globe-americas"></i>
-                              <a href="http://csgb72.github.io/main/" rel="noopener noreferred" title="Más información siguindo el link.">Web site</a>
+                            <div class="container mailylink">
+                              <p class="link_pagina"><a href="http://csgb72.github.io/main/" title="Más información siguiendo el link.">Web Site<i class="bi bi-globe-americas"></i></a>
                               </p>
+                              <p class="link_mail"><a href="mail" title="Envíenos un email.">Escríbanos<i class="bi bi-envelope"></i></a>
+                              </p>
+                            </div>  
                         </div>
                         <div class="row_referencias">
                             <h3>Referencias</h3>
@@ -108,7 +110,7 @@
                             </div>
                         <div id="contacto" class="row formulario">
                           <h3 class="titulo_formulario">Formulario de contacto</h3>
-                          <form class="row g-3 contenedor_formulario">
+                          <form class="row g-3 contenedor_formulario" method="post">
                             <div class="col-md-12">
                               <div class="col-12">
                                 <label for="inputAddress2" class="form-label">Nombre y apellido:</label>
@@ -296,10 +298,11 @@
               <a href="https://www.linkedin.com/company/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
+               <!--Campo de rangos-->
+
           <div class="container-fluid">
             <div class="row contenedorpie">
-              <div id="desempeno" class="container habilidades">
-                  <!--Campo de rangos-->  
+              <div id="desempeno" class="container habilidades">  
                 <div class="container rangos text-center justify-content-evenly ">
                   <h4 class="titulo_desempeno">Desempeño</h4>              
                   <div class="profess-cover row no-margin">
@@ -381,20 +384,71 @@
                 </div>
               </div>
             </div>
-          </div>  
-      
-        
-        <!-- Zocalo-->  
+          </div>
+          <!-- Zocalo-->  
         <p></p>
-
-      <div class="container zocalo">
-        Zocalo
-      </div>
-             
-        
-        
-        
-
+        <div>
+          <div class="container-fluid fondo">
+            <div class="borde">
+              <div class="row">
+                <div class="col1zocalo col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 wrap">
+                  <div>
+                      <h4 class="subtitfinal" >Información de contacto<h4>
+                    <div>
+                      <ul class="info_contacto">
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Soporte técnico</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col2zocalo col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  wrap">
+                  <div>
+                      <h4 class="subtitfinal">Nosotros</h4>
+                    <div>
+                      <ul>
+                        <li><a href="#">¿Quiénes somos?  </a>
+                        </li>
+                        <li><a href="#">Desarrollo Web</a>
+                        </li>
+                        <li><a href="#">Términos y Condiciones</a>
+                        </li>
+                        <li><a href="#">Política de Privacidad</a>
+                        </li>
+                        <li><a href="#">Política de evoluciones y reembolsos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col3zocalo col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 wrap">
+                  <div>
+                    <h4 class="subtitfinal">Recursos</h4>
+                    <div>
+                          <ul>
+                            <li><a href="#/">Blog</a>
+                            </li>
+                            <li><a href="#">Servicios</a>
+                            </li>
+                            <li><a href="#">Clientes Registro</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </div>
+                  </div>
+                    <div class="col4zocalo col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 wrap">
+                      <div>
+                          <img class="logo_final" src="imagenes/icono.png" title="Ian Murray logo" alt="Ian Murray logo">
+                        </div>
+                      </div>                
+                    </div>
+                  </div>
+                  <div class="row final">
+                        <div>
+                           <p>Copyright © 2023 Ian Murray | Desarrollo Web. Todos los Derechos Reservados</p>
+                        </div>
+                  </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/6dfaaa0b13.js" crossorigin="anonymous"></script>       
     </body>
